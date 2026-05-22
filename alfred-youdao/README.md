@@ -53,7 +53,7 @@ python3 yd.py "bonjour"
 ## 打包
 
 ```bash
-cd workflows/alfred-youdao
+cd alfred-youdao
 python3 make_icon.py
 zip -r Youdao.alfredworkflow info.plist yd.py icon.png config.example.json README.md
 ```

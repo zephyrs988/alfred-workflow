@@ -24,7 +24,7 @@
 重新打包：
 
 ```bash
-cd workflows/alfred-timestamp
+cd alfred-timestamp
 zip -r Timestamp.alfredworkflow info.plist time.py icon.png README.md
 ```
 

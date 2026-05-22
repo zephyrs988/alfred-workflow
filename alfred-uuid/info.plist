@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.suziheng.alfred.uuid</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>E3F4A5B6-C7D8-9012-EFAB-345678901CDE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F4A5B6C7-D8E9-0123-FABC-456789012DEF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>suziheng</string>
+	<key>description</key>
+	<string>生成 UUID v4，回车复制</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>UUID</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>uuid</string>
+				<key>queuedelaycustom</key>
+				<integer>0</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>生成中…</string>
+				<key>script</key>
+				<string>/usr/bin/python3 "./gen_uuid.py"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>UUID v4 · 回车复制</string>
+				<key>title</key>
+				<string>生成 UUID</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E3F4A5B6-C7D8-9012-EFAB-345678901CDE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>F4A5B6C7-D8E9-0123-FABC-456789012DEF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>## UUID 生成
+
+输入关键字 `uuid`，立即生成 UUID v4。
+
+按 **Enter** 复制并粘贴到前台应用，Alfred 自动关闭。
+</string>
+	<key>uidata</key>
+	<dict>
+		<key>E3F4A5B6-C7D8-9012-EFAB-345678901CDE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>icon</key>
+			<dict>
+				<key>path</key>
+				<string>icon.png</string>
+				<key>type</key>
+				<string>workflow</string>
+			</dict>
+			<key>xpos</key>
+			<integer>280</integer>
+			<key>ypos</key>
+			<integer>220</integer>
+		</dict>
+		<key>F4A5B6C7-D8E9-0123-FABC-456789012DEF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>220</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
