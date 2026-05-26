@@ -73,6 +73,7 @@ def handle_now():
     now = datetime.now()
     sec = int(now.timestamp())
     ms = sec * 1000
+    compact = now.strftime("%Y%m%d%H%M%S")
     return [
         item(
             str(sec),
@@ -83,6 +84,11 @@ def handle_now():
             str(ms),
             f"Unix 毫秒 · {format_dt(now)}",
             copy_value=ms,
+        ),
+        item(
+            compact,
+            f"紧凑时间 · {format_dt(now)}",
+            copy_value=compact,
         ),
         item(
             format_dt(now),
@@ -160,7 +166,7 @@ def handle_help(query):
     if query:
         hint = f"输入: {query}"
     return [
-        item("time now", "当前 Unix 秒 / 毫秒 / 本地时间", arg="now", valid=False),
+        item("time now", "当前 Unix 秒 / 毫秒 / 20260526111213 / 本地时间", arg="now", valid=False),
         item("time 2025-01-01", "日期 → 10 位 Unix 秒", arg="2025-01-01", valid=False),
         item("time 1779357292", "10 位 Unix 秒 → 日期时间", arg="1779357292", valid=False),
         item(
